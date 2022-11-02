@@ -59,6 +59,7 @@ if(nombre.value==="")
     alert("El campo nombre no puede estar vacío");
     nombre.classList.add("is-invalid");
     nombre.focus();
+    document.getElementById("totalPagar").value ="";    
     return ;
 }
 
@@ -67,6 +68,7 @@ if(apellido.value==="")
     alert("El campo Apellido no puede estar vacío");
     apellido.classList.add("is-invalid");
     apellido.focus();
+    document.getElementById("totalPagar").value ="";    
     return ;
 }
 
@@ -76,6 +78,7 @@ if(mail.value==="")
     alert("Debe ingresar un correo válido");
     mail.classList.add("is-invalid");
     mail.focus();
+    document.getElementById("totalPagar").value ="";    
     return ;
 }
 
@@ -98,8 +101,10 @@ if(mail.value==="")
 // if( (cantidad.value<=0) || (isNaN(cantidad.value)))
  {
      alert("Debe ingresar números válidos");
+     document.getElementById("totalPagar").value ="";  
      cantidad.classList.add("is-invalid");
      cantidad.focus();
+      
      return ;
  }
 
